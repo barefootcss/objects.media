@@ -1,0 +1,22 @@
+{
+  "name": "bare-media",
+  "version": "1.0.0",
+  "authors": [
+    "Eric Harms <barefoot.css@gmail.com>"
+  ],
+  "description": "The media object arranges content next to an image.",
+  "main": "_objects.media.scss",
+  "keywords": [
+    "barefoot",
+    "oocss",
+    "css",
+    "framework"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/barefootcss/objects.media",
+  "dependencies": {
+    "bare-defaults": "~1.0.0",
+    "bare-clearfix": "~1.0.0"   
+  }
+}
+  
