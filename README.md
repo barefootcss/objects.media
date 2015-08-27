@@ -11,11 +11,11 @@ The `media` object arranges content next to an image.
 
 Install using Bower:
 
-	$ bower --save bare-grid
+	$ bower --save bare-media
 
 Import into project:
 
-	@import "bower_components/bare-grid/objects.grid";
+	@import "bower_components/bare-grid/objects.media";
 
 ## Options
 
