@@ -1,0 +1,132 @@
+// 
+// Declarations  
+// ========================================================================== 
+
+// 
+// Features:
+// 
+
+$bare-media--xs: 					false !default;
+$bare-media--s: 					false !default;
+$bare-media--l: 					false !default;
+$bare-media--xl: 					false !default;
+$bare-media--flush: 				false !default;
+
+/* 
+   #grid
+   ========================================================================== */
+
+/**
+ * The media object arranges content next to an image.
+ *
+ * Usage:
+ *
+ * <div class="o-media">
+ * 
+ *     <div class="o-media__image"></div>
+ *     <div class="o-media__body"></div>
+ *
+ * </div>
+ */
+ 
+.o-media {
+	@extend %bare-cf;
+	display: block;
+}
+
+	.o-media__image {
+		float: left;
+		margin-right: bareRem($bare-sp-m);
+
+		> img {
+			display: block;
+		}
+	}
+
+	.o-media__body {
+	    overflow: hidden;
+        display: block;
+
+        &, > :last-child {
+        	margin-bottom: 0;
+        }
+	}
+	
+// 
+// #media--xs
+// ========================================================================== 
+
+@if ($media--xs == true) {
+
+	.o-media--xs {
+		
+		> .o-media__image {
+			margin-right: bareRem(-$bare-sp-xs);
+		}
+	}
+	
+}
+
+
+// 
+// #media--s
+// ========================================================================== 
+
+@if ($media--s == true) {
+
+	.o-media--s {
+		
+		> .o-media__image {
+			margin-right: bareRem(-$bare-sp-s);
+		}
+	}
+	
+}
+
+
+// 
+// #media--l
+// ========================================================================== 
+
+@if ($media--l == true) {
+
+	.o-media--l {
+		
+		> .o-media__image {
+			margin-right: bareRem(-$bare-sp-l);
+		}
+	}
+	
+}
+
+
+// 
+// #media--xl
+// ========================================================================== 
+
+@if ($media--xl == true) {
+
+	.o-media--xl {
+		
+		> .o-media__image {
+			margin-right: bareRem(-$bare-sp-xl);
+		}
+	}
+	
+}
+
+
+// 
+// #media--flush
+// ========================================================================== 
+
+@if ($media--flush == true) {
+
+	.o-media--flush {
+		
+		> .o-media__image {
+			margin-right: 0;
+		}
+	}
+	
+}
