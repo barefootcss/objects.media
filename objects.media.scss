@@ -10,7 +10,7 @@ $bare-media--xs: 					false !default;
 $bare-media--s: 					false !default;
 $bare-media--l: 					false !default;
 $bare-media--xl: 					false !default;
-$bare-media--flush: 					false !default;
+$bare-media--flush: 				false !default;
 
 /* 
    #grid
@@ -45,18 +45,18 @@ $bare-media--flush: 					false !default;
 
 	.o-media__body {
 	    overflow: hidden;
-        	display: block;
+        display: block;
 
-	        &, > :last-child {
-	        	margin-bottom: 0;
-	        }
+        &, > :last-child {
+        	margin-bottom: 0;
+        }
 	}
-	
+
 // 
 // #media--xs
 // ========================================================================== 
 
-@if ($media--xs == true) {
+@if ($bare-media--xs == true) {
 
 	.o-media--xs {
 		
@@ -72,7 +72,7 @@ $bare-media--flush: 					false !default;
 // #media--s
 // ========================================================================== 
 
-@if ($media--s == true) {
+@if ($bare-media--s == true) {
 
 	.o-media--s {
 		
@@ -88,7 +88,7 @@ $bare-media--flush: 					false !default;
 // #media--l
 // ========================================================================== 
 
-@if ($media--l == true) {
+@if ($bare-media--l == true) {
 
 	.o-media--l {
 		
@@ -104,7 +104,7 @@ $bare-media--flush: 					false !default;
 // #media--xl
 // ========================================================================== 
 
-@if ($media--xl == true) {
+@if ($bare-media--xl == true) {
 
 	.o-media--xl {
 		
@@ -120,7 +120,7 @@ $bare-media--flush: 					false !default;
 // #media--flush
 // ========================================================================== 
 
-@if ($media--flush == true) {
+@if ($bare-media--flush == true) {
 
 	.o-media--flush {
 		
@@ -130,3 +130,6 @@ $bare-media--flush: 					false !default;
 	}
 	
 }
+
+
+
