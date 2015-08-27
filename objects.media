@@ -10,7 +10,7 @@ $bare-media--xs: 					false !default;
 $bare-media--s: 					false !default;
 $bare-media--l: 					false !default;
 $bare-media--xl: 					false !default;
-$bare-media--flush: 				false !default;
+$bare-media--flush: 					false !default;
 
 /* 
    #grid
@@ -45,11 +45,11 @@ $bare-media--flush: 				false !default;
 
 	.o-media__body {
 	    overflow: hidden;
-        display: block;
+        	display: block;
 
-        &, > :last-child {
-        	margin-bottom: 0;
-        }
+	        &, > :last-child {
+	        	margin-bottom: 0;
+	        }
 	}
 	
 // 
